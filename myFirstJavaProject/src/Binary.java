@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class bunary {
+public class Binary {
 
 	public static void main(String[] args) {
 		int n =5;
