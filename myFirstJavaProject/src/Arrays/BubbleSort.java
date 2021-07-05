@@ -1,0 +1,27 @@
+package Arrays;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		int a[]= {7,6,5,4,3,2,1};
+		int n= a.length;
+		int temp;
+		boolean sorted= true;
+		for(int i=0;i<n-1;i++) {
+			for(int j=0;j<n-1-i;j++) {
+				if(a[j]>a[j+1]) {
+					temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+					sorted=false;
+				}
+			}
+			if(sorted) break;
+		}
+		for(int e:a) {
+			System.out.print(e+" ");
+		}
+				
+	}
+
+}
